@@ -1,0 +1,12 @@
+# Default environment to use if TEST_ENV is not set
+default_env: 'mock'
+
+# Mock environment (using a local Postman Mock Server)
+mock:
+  base_url: 'https://fakerestapi.azurewebsites.net/api/v1/Users'
+  timeout: 10
+
+# Staging environment
+staging:
+  base_url: 'https://fakerestapi.azurewebsites.net/api/v1/Users'
+  timeout: 15
